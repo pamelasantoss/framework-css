@@ -1,0 +1,27 @@
+{
+  "name": "desapegue-bootstrap",
+  "version": "1.0.0",
+  "description": "Sistema de grid CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelasantoss/desapegue-bootstrap.git"
+  },
+  "keywords": [
+    "grids"
+  ],
+  "author": "Pamela Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamelasantoss/desapegue-bootstrap/issues"
+  },
+  "homepage": "https://github.com/pamelasantoss/desapegue-bootstrap#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1"
+  }
+}
