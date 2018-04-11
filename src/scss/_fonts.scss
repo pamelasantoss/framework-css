@@ -1,0 +1,48 @@
+body {
+	font-family: $font-principal;
+	font-weight: $normal;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $semi-bold;
+	padding: 5px 0;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 19px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 13.5px;
+}
+
+h6 {
+	font-size: 11px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: $padrao-link;
+	&:hover {
+		text-decoration: underline;
+	}
+}

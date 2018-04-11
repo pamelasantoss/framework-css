@@ -1,0 +1,14 @@
+// Formatando inputs
+%inputs {
+	width: 100%;
+	border: 1px solid $bordas;
+	font-size: 14px;
+	padding: 5px 8px;
+	margin: 5px 0;
+	font-family: $font-principal;
+	font-weight: $normal;
+	border-radius: 3px;
+	&:focus {
+		outline-offset: unset;
+	}
+}
