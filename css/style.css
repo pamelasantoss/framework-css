@@ -176,6 +176,65 @@ form .campos-formulario .select:after {
   z-index: 1;
 }
 
+.checkboxes li {
+  margin: 15px 0;
+}
+
+.checkboxes input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkboxes input + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.checkboxes input + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+
+.checkboxes input:hover + label:before {
+  background: #f35429;
+}
+
+.checkboxes input:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.checkboxes input:checked + label:before {
+  background: #f35429;
+}
+
+.checkboxes input:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.checkboxes input:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+
+.checkboxes input:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+
 [class*="grid-"] {
   float: left;
   padding-left: 10px;

@@ -26,3 +26,7 @@ form {
 .campo-input-texto {
 	@extend %inputs;
 }
+
+.checkboxes {
+	@extend %checkbox;
+}
