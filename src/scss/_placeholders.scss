@@ -1,4 +1,4 @@
-// Formatando inputs
+// Formatando inputs e labels
 %inputs {
 	width: 100%;
 	border: 1px solid $bordas;
@@ -8,7 +8,13 @@
 	font-family: $font-principal;
 	font-weight: $normal;
 	border-radius: 3px;
+	color: $padrao;
 	&:focus {
 		outline-offset: unset;
 	}
+}
+
+%labelForm {
+	display: block;
+    font-weight: $semi-bold;
 }

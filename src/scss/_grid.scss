@@ -9,7 +9,8 @@ $grid-max: 1280px;
 
 [class*="grid-"] {
 	float: left;
-	padding: 0 $grid-space;
+	padding-left: $grid-space;
+	padding-right: $grid-space;
 	margin: 5px 0;
 	box-sizing: border-box;
 }

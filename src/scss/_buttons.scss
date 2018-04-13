@@ -1,0 +1,4 @@
+.btn-default {
+	@include buttons(#dcdcdc, #fff, $padrao, $font-principal, $padrao, #fff);
+	@include transitionBG;
+}

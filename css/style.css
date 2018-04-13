@@ -43,6 +43,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,7 +90,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.campo-input-texto {
+form textarea, .campo-input-texto {
   width: 100%;
   border: 1px solid #ccc;
   font-size: 14px;
@@ -98,15 +99,22 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   border-radius: 3px;
+  color: #333;
 }
 
-.campo-input-texto:focus {
+form textarea:focus, .campo-input-texto:focus {
   outline-offset: unset;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
 }
 
 [class*="grid-"] {
   float: left;
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 5px 0;
   box-sizing: border-box;
 }
@@ -162,4 +170,46 @@ a:hover {
 .page-container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+form {
+  margin: 10px 0;
+}
+
+form [class*="grid-"] label {
+  line-height: 38px;
+}
+
+form .campos-formulario {
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+form textarea {
+  resize: none;
+}
+
+.btn-default {
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #333;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.btn-default:hover {
+  background: #333;
+  color: #fff;
 }

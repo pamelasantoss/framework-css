@@ -17,27 +17,40 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget <a href="#">dapibus interdum</a>, ipsum lacus posuere ex, sed viverra augue mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
 
 		<form>
-			<label>Campo:</label>
-			<input type="text" class="campo-input-texto" value="Já existe um valor" />
+			<div class="campos-formulario">
+				<label>Campo:</label>
+				<input type="text" class="campo-input-texto" value="Já existe um valor" />
+			</div>
 
-			<label>Campo 2:</label>
-			<input type="text" placeholder="Campo 2" />
+			<div class="campos-formulario">
+				<div class="grid-1"><label>Campo lado:</label></div>
+				<div class="grid-11"><input type="text" class="campo-input-texto" value="" /></div>
+			</div>
 
-			<label>Selecione:</label>
-			<select>
-				<option>Items</option>
-				<option>Items 1</option>
-				<option>Items 2</option>
-				<option>Items 3</option>
-			</select>
+			<div class="campos-formulario">
+				<label>Campo 2:</label>
+				<input type="text" class="campo-input-texto" placeholder="Campo 2" />
+			</div>
 
-			<label>Mensagem:</label>
-			<textarea placeholder="Mensagem..."></textarea>
+			<div class="campos-formulario">
+				<label>Selecione:</label>
+				<select>
+					<option>Items</option>
+					<option>Items 1</option>
+					<option>Items 2</option>
+					<option>Items 3</option>
+				</select>
+			</div>
 
-			<input type="submit" />
-			<input type="reset" />
+			<div class="campos-formulario">
+				<label>Mensagem:</label>
+				<textarea placeholder="Mensagem..."></textarea>
+			</div>
+
+			<input type="submit" class="btn-default" />
+			<input type="reset" class="btn-default" />
 		</form>
-		<button>Clique aqui</button>
+		<button class="btn-default">Clique aqui</button>
 	</div>
 
 	<div class="grid-12">12 colunas</div>

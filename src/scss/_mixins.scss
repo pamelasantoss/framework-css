@@ -1,0 +1,24 @@
+@mixin buttons ($border-color, $bg-button, $text-color, $font-type, $hover-bg, $hover-text) {
+	border: 1px solid $border-color;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background: $bg-button;
+    font-family: $font-type;
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: $text-color;
+    &:hover {
+    	background: $hover-bg;
+    	color: $hover-text;
+    }
+}
+
+@mixin transitionBG {
+	-webkit-transition: background-color .5s ease-out;
+  	-moz-transition: background-color .5s ease-out;
+  	-o-transition: background-color .5s ease-out;
+  	transition: background-color .5s ease-out;
+}

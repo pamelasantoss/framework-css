@@ -1,3 +1,25 @@
+form {
+	margin: 10px 0;
+	label {
+		@extend %labelForm;
+	}
+	[class*="grid-"] {
+		label {
+			line-height: 38px;
+		}
+	}
+	.campos-formulario {
+		margin-bottom: 10px;
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	textarea {
+		@extend %inputs;
+		resize: none;
+	}
+}
+
 .campo-input-texto {
 	@extend %inputs;
 }
