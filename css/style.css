@@ -239,6 +239,62 @@ form .campos-formulario .select:after {
   transform: rotate(45deg);
 }
 
+.radio-button li {
+  margin: 13px 0;
+}
+
+.radio-button label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  line-height: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-button label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-button label input:checked ~ .checkmark {
+  background-color: #05b1d8;
+}
+
+.radio-button label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-button label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+}
+
+.radio-button label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.radio-button label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
 [class*="grid-"] {
   float: left;
   padding-left: 10px;

@@ -149,3 +149,59 @@
 		}
 	}
 }
+
+// Formatando radio buttons
+%radio-button {
+	li {
+		margin: 13px 0;
+	}
+	label {
+		display: block;
+	    position: relative;
+	    padding-left: 25px;
+	    line-height: 16px;
+	    cursor: pointer;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    // Escondendo o botão padrão dos browsers
+	    input {
+	    	position: absolute;
+		    opacity: 0;
+		    cursor: pointer;
+		    &:checked ~ .checkmark {
+		    	background-color: $padrao;
+		    	&:after {
+		    		display: block;
+		    	}
+		    }
+	    }
+	    // Criando um novo botão
+	    .checkmark {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 15px;
+		    width: 15px;
+		    background-color: #eaeaea;
+		    border-radius: 50%;
+		    &:after {
+		    	content: "";
+			    position: absolute;
+			    display: none;
+			    top: 4px;
+				left: 4px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background: white;
+		    }
+		}
+		&:hover {
+			input ~ .checkmark {
+				background-color: #ccc;
+			}
+		}
+	}
+}

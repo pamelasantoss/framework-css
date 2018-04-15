@@ -30,3 +30,7 @@ form {
 .checkboxes {
 	@extend %checkbox;
 }
+
+.radio-button {
+	@extend %radio-button;
+}
