@@ -8,7 +8,7 @@
 	font-family: $font-principal;
 	font-weight: $normal;
 	border-radius: 3px;
-	color: $padrao;
+	color: $padrao-texto;
 	&:focus {
 		outline-offset: unset;
 	}
@@ -40,7 +40,7 @@
 	    border: none;
 	    background: white;
 	    font-size: 14px;
-	    color: $padrao;
+	    color: $padrao-texto;
 	    width: 100%;
 	    width: 145% \9;
 	    z-index: 1;
@@ -55,7 +55,7 @@
 	    margin-left: 5px;
 	    border-style: solid;
 	    border-width: 5px;
-	    border-color: $padrao transparent transparent transparent;
+	    border-color: $padrao-texto transparent transparent transparent;
 	    position: absolute;
 	    top: 50%;
 	    margin-top: -2px;
@@ -99,12 +99,12 @@
 		    vertical-align: text-top;
 		    width: 20px;
 		    height: 20px;
-		    background: white;
+		    background: #eaeaea;
 		}
 
 		// Box hover
 		&:hover + label:before {
-		    background: #f35429;
+		    background: $padrao;
 		}
 		  
 		// Box focus
@@ -114,7 +114,7 @@
 
 		// Box checked
   		&:checked + label:before {
-    		background: #f35429;
+    		background: $padrao;
   		}
   
   		// Disabled state label.

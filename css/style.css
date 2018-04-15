@@ -198,11 +198,11 @@ form .campos-formulario .select:after {
   vertical-align: text-top;
   width: 20px;
   height: 20px;
-  background: white;
+  background: #eaeaea;
 }
 
 .checkboxes input:hover + label:before {
-  background: #f35429;
+  background: #05b1d8;
 }
 
 .checkboxes input:focus + label:before {
@@ -210,7 +210,7 @@ form .campos-formulario .select:after {
 }
 
 .checkboxes input:checked + label:before {
-  background: #f35429;
+  background: #05b1d8;
 }
 
 .checkboxes input:disabled + label {
