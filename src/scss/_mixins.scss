@@ -22,3 +22,7 @@
   	-o-transition: background-color .5s ease-out;
   	transition: background-color .5s ease-out;
 }
+
+@mixin alinhamento ($align) {
+    text-align: $align;
+}
