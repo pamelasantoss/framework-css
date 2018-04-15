@@ -94,6 +94,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.material-icons {
+  vertical-align: middle;
+}
+
 form textarea, .campo-input-texto {
   width: 98%;
   border: 1px solid #ccc;
