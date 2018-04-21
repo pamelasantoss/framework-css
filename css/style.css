@@ -352,8 +352,27 @@ form .campos-formulario .select:after {
 }
 
 .page-container {
-  max-width: 1280px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 1300px) {
+  .page-container {
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+  .page-container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-container {
+    max-width: 94%;
+    width: 100%;
+    padding: 0 3%;
+  }
 }
 
 form {
