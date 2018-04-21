@@ -420,3 +420,8 @@ table tr td {
   background: #333;
   color: #fff;
 }
+
+::selection {
+  background: #05b1d8;
+  color: white;
+}
