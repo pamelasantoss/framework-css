@@ -19,6 +19,12 @@ $grid-max: 1280px;
 	.grid-#{$i} {
 		width: 100% / $grid-columns * $i
 	}
+
+	.grid-#{$i}-mob {
+		@include respond-to(onlymobile) {
+			width: 100%;
+		}
+	}
 }
 
 .page-container {

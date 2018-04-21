@@ -307,48 +307,120 @@ form .campos-formulario .select:after {
   width: 8.33333%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-1-mob {
+    width: 100%;
+  }
+}
+
 .grid-2 {
   width: 16.66667%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-2-mob {
+    width: 100%;
+  }
 }
 
 .grid-3 {
   width: 25%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-3-mob {
+    width: 100%;
+  }
+}
+
 .grid-4 {
   width: 33.33333%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-4-mob {
+    width: 100%;
+  }
 }
 
 .grid-5 {
   width: 41.66667%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-5-mob {
+    width: 100%;
+  }
+}
+
 .grid-6 {
   width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-6-mob {
+    width: 100%;
+  }
 }
 
 .grid-7 {
   width: 58.33333%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-7-mob {
+    width: 100%;
+  }
+}
+
 .grid-8 {
   width: 66.66667%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-8-mob {
+    width: 100%;
+  }
 }
 
 .grid-9 {
   width: 75%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-9-mob {
+    width: 100%;
+  }
+}
+
 .grid-10 {
   width: 83.33333%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-10-mob {
+    width: 100%;
+  }
 }
 
 .grid-11 {
   width: 91.66667%;
 }
 
+@media only screen and (max-width: 767px) {
+  .grid-11-mob {
+    width: 100%;
+  }
+}
+
 .grid-12 {
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-12-mob {
+    width: 100%;
+  }
 }
 
 .page-container {
@@ -381,6 +453,12 @@ form {
 
 form [class*="grid-"] label {
   line-height: 38px;
+}
+
+@media only screen and (max-width: 767px) {
+  form [class*="grid-"] label {
+    line-height: inherit;
+  }
 }
 
 form .campos-formulario {

@@ -6,6 +6,10 @@ form {
 	[class*="grid-"] {
 		label {
 			line-height: 38px;
+
+			@include respond-to(onlymobile) {
+				line-height: inherit;
+			}
 		}
 	}
 	.campos-formulario {
