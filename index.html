@@ -1,178 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Sistema de Grids CSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Ícones -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-	<link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  <title>Sistema de Grids CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ícones -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-	<div class="page-container">
-		<h1>Título de nível 1</h1>
-		<h2>Título de nível 2</h2>
-		<h3>Título de nível 3</h3>
-		<h4>Título de nível 4</h4>
-		<h5>Título de nível 5</h5>
-		<h6>Título de nível 6</h6>
-
-		<p>Isso aqui é um paragrafo!</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget <a href="#">dapibus interdum</a>, ipsum lacus posuere ex, sed viverra augue mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
-
-		<form>
-			<div class="campos-formulario">
-				<label>Campo:</label>
-				<input type="text" class="campo-input-texto" value="Já existe um valor" />
-			</div>
-
-			<div class="campos-formulario">
-				<div class="grid-1 grid-1-mob"><label>Campo lado:</label></div>
-				<div class="grid-11 grid-11-mob"><input type="text" class="campo-input-texto" value="" /></div>
-			</div>
-
-			<div class="campos-formulario">
-				<label>Campo 2:</label>
-				<input type="text" class="campo-input-texto" placeholder="Campo 2" />
-			</div>
-
-			<div class="campos-formulario">
-				<label>Selecione:</label>
-				<div class="select">
-					<select>
-						<option>Items</option>
-						<option>Items 1</option>
-						<option>Items 2</option>
-						<option>Items 3</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="campos-formulario">
-				<label>Escolha:</label>
-				<ul class="checkboxes">
-					<li>
-						<input id="item1" type="checkbox" />
-						<label for="item1">Item 1</label>
-					</li>
-					<li>
-						<input id="item2" type="checkbox" />
-						<label for="item2">Item 2</label>
-					</li>
-					<li>
-						<input id="item3" type="checkbox" checked />
-						<label for="item3">Item 3</label>
-					</li>
-					<li>
-						<input id="item4" type="checkbox" />
-						<label for="item4">Item 4</label>
-					</li>
-				</ul>
-			</div>
-
-			<div class="campos-formulario">
-				<label>Escolha um dos radio button:</label>
-				<ul class="radio-button">
-					<li>
-						<label>
-							Item 1
-							<input type="radio" name="radio" checked="checked" />
-							<span class="checkmark"></span>
-						</label>
-					</li>
-					<li>
-						<label>
-							Item 2
-							<input type="radio" name="radio" />
-							<span class="checkmark"></span>
-						</label>
-					</li>
-				</ul>
-			</div>
-
-			<div class="campos-formulario">
-				<label>Mensagem:</label>
-				<textarea placeholder="Mensagem..."></textarea>
-			</div>
-
-			<input type="submit" class="btn-default" />
-			<input type="reset" class="btn-default" />
-		</form>
-
-		<button class="btn-default">Clique aqui</button>
-
-		<hr />
-		<div class="grid-6 grid-6-mob">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget dapibus interdum, ipsum lacus posuere ex, sed viverra <strong>augue</strong> mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
-		</div>
-		<div class="grid-6 grid-6-mob">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget <a href="#">dapibus interdum</a>, ipsum lacus posuere ex, sed viverra augue mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
-		</div>
-	</div>
-
-	<div class="grid-12">
-		<h2>Tabelas <i class="material-icons">grid_on</i></h2>
-		<table>
-			<tr>
-				<th>Títulos</th>
-				<th>Títulos</th>
-				<th>Títulos</th>
-				<th>Títulos</th>
-				<th>Títulos</th>
-			</tr>
-			<tr>
-				<td>Valores 1</td>
-				<td>Valores 2</td>
-				<td>Valores 3</td>
-				<td>Valores 4</td>
-				<td>Valores 5</td>
-			</tr>
-			<tr>
-				<td>Valores 1</td>
-				<td>Valores 2</td>
-				<td>Valores 3</td>
-				<td>Valores 4</td>
-				<td>Valores 5</td>
-			</tr>
-			<tr>
-				<td>Valores 1</td>
-				<td>Valores 2</td>
-				<td>Valores 3</td>
-				<td>Valores 4</td>
-				<td>Valores 5</td>
-			</tr>
-			<tr>
-				<td>Valores 1</td>
-				<td>Valores 2</td>
-				<td>Valores 3</td>
-				<td>Valores 4</td>
-				<td>Valores 5</td>
-			</tr>
-			<tr>
-				<td colspan="2">Valores 1 e 2 juntos</td>
-				<td>Valores 3</td>
-				<td>Valores 4</td>
-				<td>Valores 5</td>
-			</tr>
-		</table>
-	</div>
-
-	<div class="grid-6 grid-6-mob">
-		<ul>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item maior: lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. </li>
-		</ul>
-	</div>
-	<div class="grid-6 grid-6-mob">
-		<ol>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item maior: lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. </li>
-		</ol>
-	</div>
+  <div class="page-container">
+    <h1>Título de nível 1</h1>
+    <h2>Título de nível 2</h2>
+    <h3>Título de nível 3</h3>
+    <h4>Título de nível 4</h4>
+    <h5>Título de nível 5</h5>
+    <h6>Título de nível 6</h6>
+    <p>Isso aqui é um paragrafo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget <a href="#">dapibus interdum</a>, ipsum lacus posuere ex, sed viverra augue mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
+    <form>
+      <div class="campos-formulario">
+        <label>Campo:</label>
+        <input type="text" class="campo-input-texto" value="Já existe um valor" />
+      </div>
+      <div class="campos-formulario">
+        <div class="grid-1 grid-1-mob"><label>Campo lado:</label></div>
+        <div class="grid-11 grid-11-mob"><input type="text" class="campo-input-texto" value="" /></div>
+      </div>
+      <div class="campos-formulario">
+        <label>Campo 2:</label>
+        <input type="text" class="campo-input-texto" placeholder="Campo 2" />
+      </div>
+      <div class="campos-formulario">
+        <label>Selecione:</label>
+        <div class="select">
+          <select>
+            <option>Items</option>
+            <option>Items 1</option>
+            <option>Items 2</option>
+            <option>Items 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="campos-formulario">
+        <label>Escolha:</label>
+        <ul class="checkboxes">
+          <li>
+            <input id="item1" type="checkbox" />
+            <label for="item1">Item 1</label>
+          </li>
+          <li>
+            <input id="item2" type="checkbox" />
+            <label for="item2">Item 2</label>
+          </li>
+          <li>
+            <input id="item3" type="checkbox" checked />
+            <label for="item3">Item 3</label>
+          </li>
+          <li>
+            <input id="item4" type="checkbox" />
+            <label for="item4">Item 4</label>
+          </li>
+        </ul>
+      </div>
+      <div class="campos-formulario">
+        <label>Escolha um dos radio button:</label>
+        <ul class="radio-button">
+          <li>
+            <label>
+              Item 1
+              <input type="radio" name="radio" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+          </li>
+          <li>
+            <label>
+              Item 2
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="campos-formulario">
+        <label>Mensagem:</label>
+        <textarea placeholder="Mensagem..."></textarea>
+      </div>
+      <input type="submit" class="btn-default" />
+      <input type="reset" class="btn-default" />
+    </form>
+    <button class="btn-default">Clique aqui</button>
+    <hr />
+    <div class="grid-6 grid-6-mob">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget dapibus interdum, ipsum lacus posuere ex, sed viverra <strong>augue</strong> mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
+    </div>
+    <div class="grid-6 grid-6-mob">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. Praesent lobortis lobortis ex, at finibus orci posuere quis. Quisque facilisis, erat eget <a href="#">dapibus interdum</a>, ipsum lacus posuere ex, sed viverra augue mauris ut urna. Praesent volutpat nunc non bibendum commodo. Proin vitae sollicitudin justo. Ut tincidunt faucibus orci, eget porttitor justo imperdiet nec.</p>
+    </div>
+  </div>
+  <div class="grid-12">
+    <h2>Tabelas <i class="material-icons">grid_on</i></h2>
+    <table>
+      <tr>
+        <th>Títulos</th>
+        <th>Títulos</th>
+        <th>Títulos</th>
+        <th>Títulos</th>
+        <th>Títulos</th>
+      </tr>
+      <tr>
+        <td>Valores 1</td>
+        <td>Valores 2</td>
+        <td>Valores 3</td>
+        <td>Valores 4</td>
+        <td>Valores 5</td>
+      </tr>
+      <tr>
+        <td>Valores 1</td>
+        <td>Valores 2</td>
+        <td>Valores 3</td>
+        <td>Valores 4</td>
+        <td>Valores 5</td>
+      </tr>
+      <tr>
+        <td>Valores 1</td>
+        <td>Valores 2</td>
+        <td>Valores 3</td>
+        <td>Valores 4</td>
+        <td>Valores 5</td>
+      </tr>
+      <tr>
+        <td>Valores 1</td>
+        <td>Valores 2</td>
+        <td>Valores 3</td>
+        <td>Valores 4</td>
+        <td>Valores 5</td>
+      </tr>
+      <tr>
+        <td colspan="2">Valores 1 e 2 juntos</td>
+        <td>Valores 3</td>
+        <td>Valores 4</td>
+        <td>Valores 5</td>
+      </tr>
+    </table>
+  </div>
+  <div class="grid-6 grid-6-mob">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item maior: lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. </li>
+    </ul>
+  </div>
+  <div class="grid-6 grid-6-mob">
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item maior: lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et consectetur turpis, non dapibus dui. Proin venenatis sagittis magna eget volutpat. Pellentesque blandit aliquet nunc eget tempor. </li>
+    </ol>
+  </div>
 </body>
+
 </html>

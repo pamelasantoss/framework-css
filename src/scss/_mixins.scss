@@ -1,30 +1,31 @@
 @mixin buttons ($border-color, $bg-button, $text-color, $font-type, $hover-bg, $hover-text) {
-	border: 1px solid $border-color;
-    cursor: pointer;
-    padding: 10px 25px;
-    border-radius: 3px;
-    background: $bg-button;
-    font-family: $font-type;
-    text-transform: uppercase;
-    font-weight: $bold;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: $text-color;
-    &:hover {
-    	background: $hover-bg;
-    	color: $hover-text;
-    }
+  border: 1px solid $border-color;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background: $bg-button;
+  font-family: $font-type;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: $text-color;
+
+  &:hover {
+    background: $hover-bg;
+    color: $hover-text;
+  }
 }
 
 @mixin transitionBG {
-	-webkit-transition: background-color .5s ease-out;
-  	-moz-transition: background-color .5s ease-out;
-  	-o-transition: background-color .5s ease-out;
-  	transition: background-color .5s ease-out;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
 }
 
 @mixin alinhamento ($align) {
-    text-align: $align;
+  text-align: $align;
 }
 
 // Responsivo
@@ -32,15 +33,21 @@ $break-small: 767px;
 $break-large: 1300px;
 
 @mixin respond-to($media) {
-    @if $media == onlymobile {
-        @media only screen and (max-width: $break-small) { @content; }
+  @if $media==onlymobile {
+    @media only screen and (max-width: $break-small) {
+      @content;
     }
+  }
 
-    @else if $media == medium-screens {
-        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  @else if $media==medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
     }
+  }
 
-    @else if $media == wide-screens {
-        @media only screen and (min-width: $break-large) { @content; }
+  @else if $media==wide-screens {
+    @media only screen and (min-width: $break-large) {
+      @content;
     }
+  }
 }

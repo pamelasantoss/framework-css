@@ -1,207 +1,221 @@
 // Formatando inputs e labels
 %inputs {
-	width: 98%;
-	border: 1px solid $bordas;
-	font-size: 14px;
-	padding: 5px 1%;
-	margin: 5px 0;
-	font-family: $font-principal;
-	font-weight: $normal;
-	border-radius: 3px;
-	color: $padrao-texto;
-	&:focus {
-		outline-offset: unset;
-	}
+  width: 98%;
+  border: 1px solid $bordas;
+  font-size: 14px;
+  padding: 5px 1%;
+  margin: 5px 0;
+  font-family: $font-principal;
+  font-weight: $normal;
+  border-radius: 3px;
+  color: $padrao-texto;
+
+  &:focus {
+    outline-offset: unset;
+  }
 }
 
 %labelForm {
-	display: block;
-    font-weight: $semi-bold;
+  display: block;
+  font-weight: $semi-bold;
 }
 
 // Formatando campos de select
 %select {
-	background: #fff;
-    display: inline-block;
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  border: 1px solid $bordas;
+  border-radius: 3px;
+  overflow: hidden;
+  vertical-align: middle;
+  height: 30px;
+  width: 100%;
+  margin: 5px 0;
+
+  select {
     position: relative;
-    border: 1px solid $bordas;
-    border-radius: 3px;
-    overflow: hidden;
-    vertical-align: middle;
-    height: 30px;
+    appearance: none;
+    height: inherit;
+    padding: 5px 42px 5px 10px;
+    display: inline-block;
+    border: none;
+    background: white;
+    font-size: 14px;
+    color: $padrao-texto;
     width: 100%;
-    margin: 5px 0;
-    select {
-    	position: relative;
-	    appearance: none;
-	    height: inherit;
-	    padding: 5px 42px 5px 10px;
-	    display: inline-block;
-	    border: none;
-	    background: white;
-	    font-size: 14px;
-	    color: $padrao-texto;
-	    width: 100%;
-	    width: 145% \9;
-	    z-index: 1;
-	    option {
-	    	padding: 5px 10px;
-	    }
+    width: 145% \9;
+    z-index: 1;
+
+    option {
+      padding: 5px 10px;
     }
-    &:before {
-    	content: "";
-	    width: 0;
-	    height: 0;
-	    margin-left: 5px;
-	    border-style: solid;
-	    border-width: 5px;
-	    border-color: $padrao-texto transparent transparent transparent;
-	    position: absolute;
-	    top: 50%;
-	    margin-top: -2px;
-	    right: 10px;
-	    z-index: 2;
-	    pointer-events: none;
-    }
-    &:after {
-    	content: "";
-	    height: inherit;
-	    position: absolute;
-	    background-color: white;
-	    border-left: 1px solid $bordas;
-	    pointer-events: none;
-	    width: 30px;
-	    right: 0;
-	    top: 0;
-	    z-index: 1;
-    }
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: $padrao-texto transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &:after {
+    content: "";
+    height: inherit;
+    position: absolute;
+    background-color: white;
+    border-left: 1px solid $bordas;
+    pointer-events: none;
+    width: 30px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 // Formatando checkbox
 %checkbox {
-	li {
-		margin: 15px 0;
-	}
-	input {
-		position: absolute;
-		opacity: 0;
-		& + label {
-		    position: relative;
-		    cursor: pointer;
-		    padding: 0;
-		}
+  li {
+    margin: 15px 0;
+  }
 
-		// Box
-		& + label:before {
-		    content: '';
-		    margin-right: 10px;
-		    display: inline-block;
-		    vertical-align: text-top;
-		    width: 20px;
-		    height: 20px;
-		    background: #eaeaea;
-		}
+  input {
+    position: absolute;
+    opacity: 0;
 
-		// Box hover
-		&:hover + label:before {
-		    background: $padrao;
-		}
-		  
-		// Box focus
-		&:focus + label:before {
-		    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-		}
+    &+label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
 
-		// Box checked
-  		&:checked + label:before {
-    		background: $padrao;
-  		}
-  
-  		// Disabled state label.
-  		&:disabled + label {
-    		color: #b8b8b8;
-    		cursor: auto;
-  		}
+    // Box
+    &+label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: #eaeaea;
+    }
 
-  		// Disabled box.
-  		&:disabled + label:before {
-    		box-shadow: none;
-    		background: #ddd;
-  		}
+    // Box hover
+    &:hover+label:before {
+      background: $padrao;
+    }
 
-  		// Checkmark. Could be replaced with an image
-		&:checked + label:after {
-		    content: '';
-		    position: absolute;
-		    left: 5px;
-		    top: 9px;
-		    background: white;
-		    width: 2px;
-		    height: 2px;
-		    box-shadow: 
-		      2px 0 0 white,
-		      4px 0 0 white,
-		      4px -2px 0 white,
-		      4px -4px 0 white,
-		      4px -6px 0 white,
-		      4px -8px 0 white;
-		    transform: rotate(45deg);
-		}
-	}
+    // Box focus
+    &:focus+label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // Box checked
+    &:checked+label:before {
+      background: $padrao;
+    }
+
+    // Disabled state label.
+    &:disabled+label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+
+    // Disabled box.
+    &:disabled+label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+
+    // Checkmark. Could be replaced with an image
+    &:checked+label:after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow:
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 // Formatando radio buttons
 %radio-button {
-	li {
-		margin: 13px 0;
-	}
-	label {
-		display: block;
-	    position: relative;
-	    padding-left: 25px;
-	    line-height: 16px;
-	    cursor: pointer;
-	    -webkit-user-select: none;
-	    -moz-user-select: none;
-	    -ms-user-select: none;
-	    user-select: none;
-	    // Escondendo o botão padrão dos browsers
-	    input {
-	    	position: absolute;
-		    opacity: 0;
-		    cursor: pointer;
-		    &:checked ~ .checkmark {
-		    	background-color: $padrao;
-		    	&:after {
-		    		display: block;
-		    	}
-		    }
-	    }
-	    // Criando um novo botão
-	    .checkmark {
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    height: 15px;
-		    width: 15px;
-		    background-color: #eaeaea;
-		    border-radius: 50%;
-		    &:after {
-		    	content: "";
-			    position: absolute;
-			    display: none;
-			    top: 4px;
-				left: 4px;
-				width: 7px;
-				height: 7px;
-				border-radius: 50%;
-				background: white;
-		    }
-		}
-		&:hover {
-			input ~ .checkmark {
-				background-color: #ccc;
-			}
-		}
-	}
+  li {
+    margin: 13px 0;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    line-height: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    // Escondendo o botão padrão dos browsers
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked~.checkmark {
+        background-color: $padrao;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    // Criando um novo botão
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background-color: #eaeaea;
+      border-radius: 50%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 4px;
+        left: 4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+
+    &:hover {
+      input~.checkmark {
+        background-color: #ccc;
+      }
+    }
+  }
 }

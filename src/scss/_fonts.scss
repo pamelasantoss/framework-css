@@ -1,57 +1,63 @@
 body {
-	font-family: $font-principal;
-	font-weight: $normal;
-	font-size: 14px;
-	color: $padrao-texto;
+  font-family: $font-principal;
+  font-weight: $normal;
+  font-size: 14px;
+  color: $padrao-texto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: $semi-bold;
-	padding: 5px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $semi-bold;
+  padding: 5px 0;
 }
 
 h1 {
-	font-size: 34px;
+  font-size: 34px;
 }
 
 h2 {
-	font-size: 26px;
+  font-size: 26px;
 }
 
 h3 {
-	font-size: 19px;
+  font-size: 19px;
 }
 
 h4 {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 h5 {
-	font-size: 13.5px;
+  font-size: 13.5px;
 }
 
 h6 {
-	font-size: 11px;
+  font-size: 11px;
 }
 
 p {
-	font-size: 14px;
-	line-height: 17px;
-	margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 5px;
 }
 
 strong {
-	font-weight: $bold;
+  font-weight: $bold;
 }
 
 a {
-	text-decoration: none;
-	color: $padrao-link;
-	&:hover {
-		text-decoration: underline;
-	}
+  text-decoration: none;
+  color: $padrao-link;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .material-icons {
-	vertical-align: middle;
+  vertical-align: middle;
 }

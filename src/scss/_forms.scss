@@ -1,40 +1,45 @@
 form {
-	margin: 10px 0;
-	label {
-		@extend %labelForm;
-	}
-	[class*="grid-"] {
-		label {
-			line-height: 38px;
+  margin: 10px 0;
 
-			@include respond-to(onlymobile) {
-				line-height: inherit;
-			}
-		}
-	}
-	.campos-formulario {
-		margin-bottom: 10px;
-		display: block;
-		float: left;
-		width: 100%;
-		.select {
-			@extend %select;
-		}
-	}
-	textarea {
-		@extend %inputs;
-		resize: none;
-	}
+  label {
+    @extend %labelForm;
+  }
+
+  [class*="grid-"] {
+    label {
+      line-height: 38px;
+
+      @include respond-to(onlymobile) {
+        line-height: inherit;
+      }
+    }
+  }
+
+  .campos-formulario {
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+    width: 100%;
+
+    .select {
+      @extend %select;
+    }
+  }
+
+  textarea {
+    @extend %inputs;
+    resize: none;
+  }
 }
 
 .campo-input-texto {
-	@extend %inputs;
+  @extend %inputs;
 }
 
 .checkboxes {
-	@extend %checkbox;
+  @extend %checkbox;
 }
 
 .radio-button {
-	@extend %radio-button;
+  @extend %radio-button;
 }
