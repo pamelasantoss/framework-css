@@ -26,15 +26,7 @@ gulp
 * SASS/CSS
 * Gulp
 
-## Pendencies
-
-* Link colors (tag a)
-* Lists (ul, ol, dd, dl)
-* Images (tag img)
-* Images compiler (sprites)
-* Validation tips
-
-## Done
+## Already to use!
 * Grid
 * Tipography (one is already defined in a variable)
 * Heading tags + paragraph sizes: H1, H2, H3, H4, H5, H6, p
@@ -42,3 +34,11 @@ gulp
 * Tables
 * Forms (inputs, textarea, checkbox, radio button, select...)
 * Icons
+
+## Pendencies
+
+* Link colors (tag a)
+* Lists (ul, ol, dd, dl)
+* Images (tag img)
+* Images compiler (sprites)
+* Validation tips
