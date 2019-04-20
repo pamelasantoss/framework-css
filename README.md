@@ -1,20 +1,44 @@
-# desapegue-bootstrap
-Sistema de grid em css
+# Framework CSS
+Grid system and many styles using sass
 
-**O que falta?**
+Many styles are ready to use in any project that uses sass.
+The ideia to create this was to stop using Bootstrap in all my projects. I wanted to create something mine to reuse and edit in many ways.
 
-* Cor de links (tag a)
-* Listas (ul, ol, dd, dl)
-* Imagens (tag img)
-* Compilar imagens (sprites)
-* Tips de validação
+## Getting Started
 
+To see the styles, you need to open the `index.html` in your browser. If you need to modify the ready styles, you will find in src folder.
 
-**O que já foi feito?**
-* Grid (colunas)
-* Tipografia (definir algum tipo em uma variável onde fique fácil alterar depois)
-* Padrão de tamanhos: H1, H2, H3, H4, H5, H6, p
-* Padrão de botões (criar variações de tamanhos)
-* Tabelas
-* Elementos de um formulário (inputs, textarea, checkbox, radio button, select...)
-* Ícones
+### Installing
+
+```
+npm install
+```
+
+And then to convert scss to css
+
+```
+gulp
+```
+
+## Knowledge used
+
+* HTML/HTML5
+* SASS/CSS
+* Gulp
+
+## Pendencies
+
+* Link colors (tag a)
+* Lists (ul, ol, dd, dl)
+* Images (tag img)
+* Images compiler (sprites)
+* Validation tips
+
+## Done
+* Grid
+* Tipography (one is already defined in a variable)
+* Heading tags + paragraph sizes: H1, H2, H3, H4, H5, H6, p
+* Buttons (I need to create size variations)
+* Tables
+* Forms (inputs, textarea, checkbox, radio button, select...)
+* Icons
