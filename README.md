@@ -26,7 +26,7 @@ gulp
 * SASS/CSS
 * Gulp
 
-## Already to use!
+### Already to use!
 * Grid
 * Tipography (one is already defined in a variable)
 * Heading tags + paragraph sizes: H1, H2, H3, H4, H5, H6, p
@@ -35,7 +35,7 @@ gulp
 * Forms (inputs, textarea, checkbox, radio button, select...)
 * Icons
 
-## Pendencies
+### Pendencies
 
 * Link colors (tag a)
 * Lists (ul, ol, dd, dl)
