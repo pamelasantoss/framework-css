@@ -1,44 +1,60 @@
 # Framework CSS
-Grid system and many styles using sass
 
-Many styles are ready to use in any project that uses sass.
-The ideia to create this was to stop using Bootstrap in all my projects. I wanted to create something mine to reuse and edit in many ways.
+Lightweight CSS framework and responsive grid system written in SASS. Designed as a small, reusable set of styles to use instead of larger UI frameworks. Includes base typography, buttons, tables, form styles and a modular SASS structure.
 
-## Getting Started
+Status: Prototype — SCSS source files and Gulp build tasks are included.
 
-To see the styles, you need to open the `index.html` in your browser. If you need to modify the ready styles, you will find in src folder.
+### Key features
+- Responsive grid
+- Base typography and variables
+- Buttons, tables and form controls
+- Modular SASS partials in `src/scss/`
 
-### Installing
+### Where to edit
+- Entry SCSS: `src/scss/style.scss`
+- Generated CSS: `css/style.css` and `css/style.min.css`
+- Example page: `index.html`
+
+### Requirements
+- Node.js (LTS recommended) and npm
+- Gulp is listed in `package.json` (v3.x). Use `npx gulp` if you do not have a global CLI installed.
+
+### Quick start
+1. Install dependencies:
 
 ```
 npm install
 ```
-
-And then to convert scss to css
+2. Build the CSS (one option):
 
 ```
-gulp
+npx gulp
 ```
+3. Open `index.html` to preview the styles.
 
-## Knowledge used
+If the `gulpfile.js` includes a watch/serve task, `npx gulp` may also start a development server with live reload (`browser-sync`).
 
-* HTML/HTML5
-* SASS/CSS
-* Gulp
+### Project structure
+- `src/scss/` — SASS partials and `style.scss` (source)
+- `css/` — compiled outputs (`style.css`, `style.min.css`)
+- `index.html` — demo/example page
+- `gulpfile.js` — build tasks
 
-### Already to use!
-* Grid
-* Tipography (one is already defined in a variable)
-* Heading tags + paragraph sizes: H1, H2, H3, H4, H5, H6, p
-* Buttons (I need to create size variations)
-* Tables
-* Forms (inputs, textarea, checkbox, radio button, select...)
-* Icons
+### Next steps
+- Upgrade to Gulp 4 for improved compatibility and maintainability
+- Add npm scripts for common tasks (`build`, `watch`, `start`) in `package.json`
+- Produce component documentation (grid usage, utility classes, button variants)
+- Refine variables/tokens (`src/scss/_variables.scss`) for colors, spacing and typography
+- Add automated release/publishing (npm package or CDN)
 
-### Pendencies
+### Contributing
+- Open issues for bugs or feature requests
+- Send pull requests with focused changes and clear descriptions
 
-* Link colors (tag a)
-* Lists (ul, ol, dd, dl)
-* Images (tag img)
-* Images compiler (sprites)
-* Validation tips
+### License
+
+ISC
+
+---
+
+Made with ❤️ by [Pamela Santos](https://pamelasantos.dev.br/)
